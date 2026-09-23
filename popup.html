@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 300px; font: 13px system-ui, sans-serif; margin: 12px; }
+  label { display: block; margin-top: 10px; font-weight: 600; }
+  textarea, input[type=text], input[type=number] { width: 100%; box-sizing: border-box; margin-top: 4px; }
+  textarea { height: 70px; }
+  small { color: #666; font-weight: normal; }
+  button { margin-top: 12px; width: 100%; padding: 6px; }
+  #msg { color: green; text-align: center; margin-top: 6px; }
+</style>
+</head>
+<body>
+  <label><input type="checkbox" id="enabled"> 启用自动完成</label>
+  <label>网址包含 <small>（留空 = 所有网站）</small><input type="text" id="siteMatch" placeholder="例如 kefu.example.com"></label>
+  <label>离开关键字 <small>（一行一个）</small><textarea id="leaveKeywords"></textarea></label>
+  <label>「完成」按钮文字 <small>（一行一个）</small><textarea id="finishTexts"></textarea></label>
+  <label>确认视窗按钮文字 <small>（一行一个）</small><textarea id="confirmTexts"></textarea></label>
+  <label>延迟毫秒 <input type="number" id="delayMs" min="0" step="100"></label>
+  <button id="save">保存</button>
+  <div id="msg"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
