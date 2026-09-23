@@ -3,7 +3,7 @@ const DEFAULTS = {
   leaveKeywords: "离开对话",
   finishTexts: "完成",
   confirmTexts: "确定\n确认",
-  delayMs: 1500
+  delayMs: 0
 };
 const keys = Object.keys(DEFAULTS);
 chrome.storage.sync.get(DEFAULTS, cfg => {

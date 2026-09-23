@@ -4,7 +4,7 @@
     leaveKeywords: "会员已离开\n访客已离开\n对方已离开\n离开对话\n已跳出\n对话已结束",
     finishTexts: "完成\n结束对话\n结束",
     confirmTexts: "确定\n确认",
-    delayMs: 1500
+    delayMs: 0
   };
   let cfg = { ...DEFAULTS };
   let busy = false;
